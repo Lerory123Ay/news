@@ -1,0 +1,101 @@
+/* Resetting some defaults */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Georgia, Liberata1, Liberata, Times New Roman, serif, sans-serif;
+    background-color: #ffffe6; /* Light gray background or any color you prefer */
+    color: #333333; /* Default text color */
+}
+
+/* Main news container */
+.news-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+body.dark-mode {
+    background-color: #2C2C2C;
+    color: #EEEADE;
+}
+
+.news-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.news-image {
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.news-image:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Emphasized shadow on hover */
+}
+
+.image-credit {
+    font-size: 12px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* News content styling */
+.news-content {
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: Liberata1, Georgia, Times New Roman, serif, sans-serif;
+}
+
+.news-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: Georgia, Times New Roman, sans-serif, serif;
+}
+
+body.dark-mode .news-title {
+    color: #EEEADE; /* Text color for dark mode */
+}
+
+body.dark-mode .news-description {
+    color: #EEEADE; /* Text color for dark mode */
+}
+
+/* Styling the font for paragraphs */
+p {
+    font-family: Liberata, Georgia, Times New Roman, serif, sans-serif;
+    font-size: 20px;
+}
+
+/* Styling the font for all heading tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Liberata1, sans-serif, serif;
+}
+
+@font-face {
+    font-family: 'Liberata'; /* Name of the font */
+    src: url('Liberata.ttf') format('truetype'); /* Path to the .ttf file */
+}
+
+body {
+    font-family: 'Liberata', sans-serif; /* Apply the font */
+}
+
+@font-face {
+    font-family: 'Liberata1'; /* Name of the font */
+    src: url('Liberata1.ttf') format('truetype'); /* Path to the .ttf file */
+}
+
